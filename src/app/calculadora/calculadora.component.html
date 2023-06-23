@@ -1,0 +1,17 @@
+<div class="d-flex flex-column mt-5">
+    <h1 class="h1 mx-auto">Calculadora</h1>
+    <form action="" class="bg-dark  w-50  mx-auto text-white fw-bold py-4 px-5 d-flex flex-column mt-5 rounded ">
+        <label for="num1" >numero 1 </label>
+        <input type="number" name="num1" [(ngModel)]="numero1"  class="form-control">
+        <label for="num2">numero 2 </label>
+        <input type="number" name="num2" [(ngModel)]="numero2"  class="form-control">
+        <input type="text" disabled class="form-control mt-4" [value]="resultado" placeholder="resultado">
+        <div class="d-flex flex-row gap-2 justify-content-start mt-3 ">
+            <button class="btn btn-primary " (click)="sumar()">Sumar</button>
+            <button class="btn btn-danger " (click)="restar()">Restar</button>
+            <button class="btn btn-success " (click)="dividir()">Dividir</button>
+            <button class="btn btn-warning " (click)="multiplicar()">Multiplicar</button>
+            <button class="btn btn-light " (click)="restear()">Resetear valores </button>
+        </div>
+    </form>
+</div>
